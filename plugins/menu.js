@@ -12,7 +12,7 @@ cmd({
     alias: ["panel", "list", "commands"],
     desc: "Show main menu.",
     category: "main",
-    react: "🎀",
+    react: "📜",
     filename: __filename
 },
 async (conn, mek, m, { from, pushname, prefix, reply }) => {
@@ -43,7 +43,7 @@ async (conn, mek, m, { from, pushname, prefix, reply }) => {
 │ ⊳ *𝗛𝗶 ${pushname}, ${greeting}!*
 │
 │ ◈ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : 1.0.0
-│ ◈ 𝗢𝘄𝗻𝗲𝗿  : thuhina vimukthi wijerathna
+│ ◈ 𝗢𝘄𝗻𝗲𝗿  : MR.JANITH SACHINTHA
 │ ◈ 𝗥𝗮𝗺    : ${ramUsage}
 │ ◈ 𝗨𝗽𝘁𝗶𝗺𝗲 : ${rtime}
 │ ◈ 𝗛𝗼𝘀𝘁   : ${hostname}
