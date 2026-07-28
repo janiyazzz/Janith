@@ -46,7 +46,7 @@ const SessionSchema = new mongoose.Schema({ sessionId: String, data: Object });
 const Session = mongoose.model('fgfgfgdfgdfd', SessionSchema);
 const UserConfigSchema = new mongoose.Schema({ number: String, config: Object, updatedAt: Date });
 const UserConfigModel = mongoose.model('UserConfig', UserConfigSchema);
-const NewsletterReactSchema = new mongoose.Schema({ jid: String, emojis: Array, addedAt: Date });b
+const NewsletterReactSchema = new mongoose.Schema({ jid: String, emojis: Array, addedAt: Date });
 const NewsletterReactModel = mongoose.model('NewsletterReact', NewsletterReactSchema);
 
 async function setUserConfigInMongo(number, conf) {
