@@ -1,5 +1,5 @@
 module.exports = {
-    ➤PREFIX: ".",
+    PREFIX: ".",
     🧑‍💻🕵️‍♂️OWNER_NUMBER: "94701413155",
     ⚡BOT_NAME: "JANIYAZZZ-MD",
     ⚡ALIVE_MSG: "Hello, JANIYAZZZ-MD is Online Now! 🖤",
