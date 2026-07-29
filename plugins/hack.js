@@ -15,7 +15,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         if (!isOwner) return reply("*📛 ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.*");
 
         const steps = [
-            '💻 *BLK-MD HACK STARTING...* 💻',
+            '💻 *JANIYAZZZ-MD HACK STARTING...* 💻',
             '',
             '*Initializing hacking tools...* 🛠️',
             '*Connecting to remote servers...* 🌐',
