@@ -48,7 +48,7 @@ async (conn, mek, m, { from, reply, quoted }) => {
            
             await conn.sendMessage(from, {
                 image: { url: finalImage },
-                caption: "🎨 *𝗖𝗢𝗟𝗢𝗥𝗜𝗭𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © 𝙱𝙻𝙺 𝚀𝚄𝙴𝙴𝙽 𝚅𝟹"
+                caption: "🎨 *𝗖𝗢𝗟𝗢𝗥𝗜𝗭𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © 𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙳 𝚅1"
             }, { quoted: mek });
 
             await conn.sendMessage(from, { text: "✅ *𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!*", edit: key });
