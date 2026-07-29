@@ -17,7 +17,7 @@ async(conn, mek, m, { from, q, reply }) => {
     try {
         if (!q) return await reply('🎨 *Please provide a name to create a logo!* \n\n*Ex:* .logo Yasas');
 
-        let caption = `╭━━━〔 *𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1* 〕━━━┈⊷
+        let caption = `╭━━━〔 *𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙳 𝚅1* 〕━━━┈⊷
 ┃ 🎨 *ʟᴏɢᴏ ᴍᴀᴋᴇʀ*
 ╰━━━━━━━━━━━━━━━┈⊷
 
@@ -34,7 +34,7 @@ async(conn, mek, m, { from, q, reply }) => {
         });
         
         caption += rows;
-        caption += `\n╰━━━━━━━━━━━━━━━┈⊷\n\n> © ᴛʜᴜʜɪ ᴍᴅ ᴠ01`;
+        caption += `\n╰━━━━━━━━━━━━━━━┈⊷\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ᴠ01`;
 
        
         const sentMsg = await conn.sendMessage(from, {
@@ -80,7 +80,7 @@ cmd({
             from,
             { 
                 image: { url: logoUrl }, 
-                caption: `✅ *𝗟𝗢𝗚𝗢 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!* \n\n*✨ Style:* ${style.toUpperCase()}\n*👤 Name:* ${name}\n\n> © ᴛʜᴜʜɪ ᴍᴅ ᴠ01` 
+                caption: `✅ *𝗟𝗢𝗚𝗢 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!* \n\n*✨ Style:* ${style.toUpperCase()}\n*👤 Name:* ${name}\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ᴠ01` 
             },
             { quoted: mek }
         );
