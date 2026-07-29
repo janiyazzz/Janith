@@ -69,7 +69,7 @@ async (conn, mek, m, { from, q, reply }) => {
 │
 ╰───────────────⟡
 
-> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1`;
+> © 𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙳 𝚅1`;
 
         await conn.sendMessage(from, {
             image: { url: apiUrl },
