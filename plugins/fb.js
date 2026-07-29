@@ -36,14 +36,14 @@ async (conn, mek, m, { from, q, reply }) => {
        
         await conn.sendMessage(from, { react: { text: "⬆️", key: mek.key } });
         
-        const caption = `╭─── « 🏮 *𝗙𝗕 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* » ───
+        const caption = `╭─── « 🏮 *𝗝𝗔𝗡𝗜𝗬𝗔𝗭𝗭 𝗙𝗕 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* » ───
 │
 │ 🎬 *𝗧𝗶𝘁𝗹𝗲:* ${title}
 │ quality: *${quality}*
 │
 ╰───────────────⟡
 
-> © BLACK QUEEN MD V01`;
+> © JANIYAZZZ MD V01`;
 
         
         await conn.sendMessage(from, { 
