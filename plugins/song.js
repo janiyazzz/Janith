@@ -24,7 +24,7 @@ async(conn, mek, m, { from, q, reply }) => {
         
         if (!result) return reply("❌ *𝗦𝗼𝗻𝗴 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱!*");
 
-        let caption = `╭━━━〔 *𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1* 〕━━━┈⊷
+        let caption = `╭━━━〔 *𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙳 𝚅1* 〕━━━┈⊷
 ┃ 🎧 *𝗦𝗢𝗡𝗚 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘Ｒ*
 ╰━━━━━━━━━━━━━━━┈⊷
 
@@ -90,7 +90,7 @@ cmd({
         await conn.sendMessage(from, { 
             audio: { url: dlUrl }, 
             mimetype: 'audio/mpeg',
-            caption: `🎶 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}\n> © 𝙳𝚃𝙴𝙲 𝙼𝙸𝙽𝙸 𝚅𝟹`
+            caption: `🎶 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}\n> © 𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙸𝙽𝙸 𝚅1`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
