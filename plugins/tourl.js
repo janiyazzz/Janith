@@ -55,7 +55,7 @@ async (conn, mek, m, { from, reply, pushname }) => {
 │
 ╰───────────────⟡
 
-> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1`;
+> © 𝙹𝙰𝙽𝙸𝚈𝙰𝚉𝚉𝚉 𝙼𝙳 𝚅1`;
 
         await reply(caption);
         await conn.sendMessage(from, { react: { text: "✅", key: mek.key } });
