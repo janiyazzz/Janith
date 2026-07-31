@@ -35,7 +35,7 @@ async (conn, mek, m, { from, q, reply, pushname }) => {
         // Clean & Beautiful Layout with Header and Footer
         let caption = 
 `╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
-│ 🎬 *BLACK QUEEN MD MOVIE DOWNLOADER* 🎬
+│ 🎬 *JANIYAZZZ MD MOVIE DOWNLOADER* 🎬
 ╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
 
 📌 *Title:* ${movie.Title} (${movie.Year})
@@ -76,7 +76,7 @@ ${movie.Plot}
 
 👤 *Requested By:* ${pushname}
 
-> *Powered by BLACK-QUEEN-MD*`;
+> *Powered by ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ*`;
 
         // Check Poster Image
         let posterUrl = (movie.Poster && movie.Poster !== "N/A") 
