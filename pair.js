@@ -326,7 +326,41 @@ const sock = makeWASocket({
             } else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
-                try {
+                try {// --- AUTO ONLINE MESSAGE TO OWNER CHAT WITH LOGO ---
+try {
+    const ownerJid = sock.user.id.split(':')[0] + '@s.whatsapp.net';
+    
+    // ඔයාගේ Logo එකේ Direct Link එක මෙතනට දාන්න (.jpg හෝ .png)
+    const logoUrl = config.BOT_LOGO || "https://i.ibb.co/Y4mPVQ2N/c88b38cfff68.jpg"; 
+
+    const autoMsg = `╭───〔 *JANIYAZZZ MINI* 〕───>
+│
+│ 🟢  *BOT IS ONLINE NOW!*
+│
+│ ◈ *PREFIX:* [ ${config.PREFIX || '.'} ]
+│ ◈ *MODE:* ${config.MODE || 'public'}
+│
+│ © *POWERED BY JANIYAZZZ MD </>*
+╰─────────────────────────>`;
+
+    await sock.sendMessage(ownerJid, {
+        image: { url: logoUrl },
+        caption: autoMsg,
+        contextInfo: {
+            forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363412324954419@newsletter',
+                newsletterName: 'Ⓥ 𝐉𝐀𝐍𝐈𝐘𝐀𝐙𝐙𝐙 丨MD  𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇  </> 亗',
+                serverMessageId: 100
+            }
+        }
+    });
+} catch (err) {
+    console.error("Auto Online Msg Error:", err);
+}
+// ----------------------------------------------------
+
                     const groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
                     await sock.groupAcceptInvite(groupCode).catch(() => {});
 
