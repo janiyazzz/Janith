@@ -2,7 +2,7 @@ const { cmd, commands } = require('../command');
 const os = require('os');
 const moment = require('moment-timezone');
 
-const botLogo = "https://d.uguu.se/xreTADan.jpg";
+const botLogo = "https://i.ibb.co/cSy6TwFH/e995c6e2a1cb.jpg";
 
 const logoTypes = [
     "neon","neon2","fire2","glitch","hacker","futuristic","thunder","devil",
