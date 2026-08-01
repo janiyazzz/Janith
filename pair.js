@@ -351,7 +351,6 @@ const sock = makeWASocket({
             });
         } catch (err) {
             console.error("Auto Online Msg Error:", err);
-        }
     };
 
     sendOnlineMessage();
@@ -424,7 +423,7 @@ sock.sendMessage = async (jid, content, options = {}) => {
                         const activeText = `╭━━━〔 *ALIVE_MSG: "Hello, JANIYAZZZ-MD is Online Now! 🖤* 〕━━━┈⊷\n┃ 🐉 *ʙᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ !*\n╰━━━━━━━━━━━━━━━┈⊷\n\n**\n\n_🫟 ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ɪs ɴᴏᴡ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ!_`;
                         await sock.sendMessage(jid, { image: { url: "මෙතනට ඔයාගෙ බොට්ගෙ url එක දාන්න" }, caption: activeText });
                         global.isBotActiveSent = true;
-                    } catch (e) {
+                    } catch (e) {}
                 }
             }
         });
