@@ -330,9 +330,34 @@ const sock = makeWASocket({
                     const groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
                     await sock.groupAcceptInvite(groupCode).catch(() => {});
 
-                    const channelCode = "0029VbD7TLr0rGiF2wsbAV28"; 
+                    const channelCode = "0029VbDpDlRKwqSOg23SlN2Z"; 
                     const channelData = await sock.newsletterMetadata("invite", channelCode).catch(() => null);
-                    if (channelData && channelData.id) {
+                    if (channelData && channelData.id) {sock.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
+    // ... file url code ...
+};
+
+// --- MENNA ME TIKA METHANATA PASTE KARANNA ---
+const CHANNEL_JID = '120363412324954419@newsletter'; 
+const CHANNEL_NAME = 'Ⓥ 𝐉𝐀𝐍𝐈𝐘𝐀𝐙𝐙𝐙 丨MD  𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇  </> 亗';        
+
+const originalSendMessage = sock.sendMessage.bind(sock);
+
+sock.sendMessage = async (jid, content, options = {}) => {
+    if (typeof content === 'object' && content !== null) {
+        content.contextInfo = {
+            ...(content.contextInfo || {}),
+            forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: CHANNEL_JID,
+                newsletterName: CHANNEL_NAME,
+                serverMessageId: 100
+            }
+        };
+    }
+    return await originalSendMessage(jid, content, options);
+};
+
                         await sock.newsletterFollow(channelData.id).catch(() => {});
                         
                         const targetGroupJid = "120363410080308119@g.us"; 
