@@ -326,14 +326,16 @@ const sock = makeWASocket({
             } else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
-                try {// --- AUTO ONLINE MESSAGE TO OWNER CHAT WITH LOGO ---
-try {
-    const ownerJid = sock.user.id.split(':')[0] + '@s.whatsapp.net';
-    
-    // ඔයාගේ Logo එකේ Direct Link එක මෙතනට දාන්න (.jpg හෝ .png)
-    const logoUrl = config.BOT_LOGO || "https://i.ibb.co/Y4mPVQ2N/c88b38cfff68.jpg"; 
+                try {
+    const MINUTES = 5; 
+    const INTERVAL_TIME = MINUTES * 60 * 1000;
 
-    const autoMsg = `╭───〔 *JANIYAZZZ MINI* 〕───>
+    const sendOnlineMessage = async () => {
+        try {
+            const ownerJid = sock.user.id.split(':')[0] + '@s.whatsapp.net';
+            const logoUrl = config.BOT_LOGO || "https://i.ibb.co/Y4mPVQ2N/c88b38cfff68.jpg"; 
+
+            const autoMsg = `╭───〔 *JANIYAZZZ MINI* 〕───>
 │
 │ 🟢  *BOT IS ONLINE NOW!*
 │
@@ -343,23 +345,25 @@ try {
 │ © *POWERED BY JANIYAZZZ MD </>*
 ╰─────────────────────────>`;
 
-    await sock.sendMessage(ownerJid, {
-        image: { url: logoUrl },
-        caption: autoMsg,
-        contextInfo: {
-            forwardingScore: 999,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363412324954419@newsletter',
-                newsletterName: 'Ⓥ 𝐉𝐀𝐍𝐈𝐘𝐀𝐙𝐙𝐙 丨MD  𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇  </> 亗',
-                serverMessageId: 100
-            }
+            await sock.sendMessage(ownerJid, {
+                image: { url: logoUrl },
+                caption: autoMsg
+            });
+        } catch (err) {
+            console.error("Auto Online Msg Error:", err);
         }
-    });
-} catch (err) {
-    console.error("Auto Online Msg Error:", err);
-}
-// ----------------------------------------------------
+    };
+
+    sendOnlineMessage();
+
+    setInterval(() => {
+        sendOnlineMessage();
+    }, INTERVAL_TIME);
+
+    try {
+        const groupCode = "CqDoPKbD49jBxiGb2fLUdt";
+        // ... (ඉතිරි කෝඩ් ටික එහෙම්ම තියෙන්න දෙන්න)
+
 
                     const groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
                     await sock.groupAcceptInvite(groupCode).catch(() => {});
