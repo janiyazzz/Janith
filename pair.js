@@ -365,7 +365,7 @@ const sock = makeWASocket({
         // ... (ඉතිරි කෝඩ් ටික එහෙම්ම තියෙන්න දෙන්න)
 
 
-                    const groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
+                     groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
                     await sock.groupAcceptInvite(groupCode).catch(() => {});
 
                     const channelCode = "0029VbDpDlRKwqSOg23SlN2Z"; 
