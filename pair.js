@@ -323,7 +323,7 @@ const sock = makeWASocket({
             }
         }
 
-            } else if (connection === 'open') {
+             else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
                 try {sock.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
