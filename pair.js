@@ -326,7 +326,32 @@ const sock = makeWASocket({
             } else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
-                try {
+                try {sock.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
+    // ... file url code ...
+};
+
+// --- MENNA ME TIKA METHANATA PASTE KARANNA ---
+const CHANNEL_JID = '120363412324954419@newsletter'; 
+const CHANNEL_NAME = 'Ⓥ 𝐉𝐀𝐍𝐈𝐘𝐀𝐙𝐙𝐙 丨MD  𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇  </> 亗';        
+
+const originalSendMessage = sock.sendMessage.bind(sock);
+
+sock.sendMessage = async (jid, content, options = {}) => {
+    if (typeof content === 'object' && content !== null) {
+        content.contextInfo = {
+            ...(content.contextInfo || {}),
+            forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: CHANNEL_JID,
+                newsletterName: CHANNEL_NAME,
+                serverMessageId: 100
+            }
+        };
+    }
+    return await originalSendMessage(jid, content, options);
+};
+
                     const groupCode = "CqDoPKbD49jBxiGb2fLUdt?s=cl&p=a&ilr=0"; 
                     await sock.groupAcceptInvite(groupCode).catch(() => {});
 
