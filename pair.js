@@ -425,7 +425,8 @@ sock.sendMessage = async (jid, content, options = {}) => {
                         global.isBotActiveSent = true;
                     } catch (e) {}
                 }
-           }
+            });
+
 
         sock.ev.on('messages.upsert', async (mek) => {
             try {
