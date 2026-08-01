@@ -24,7 +24,7 @@ async (conn, mek, m, { from, q, reply, pushname }) => {
 
         // Fetching Movie Details
         const apiKey = "76cb82e7"; 
-        const apiUrl = `https://www.omdbapi.com/?t=${encodeURIComponent(q)}&plot=full&apikey=${apiKey}`;
+        const apiUrl = `https://api.zanta-mini.store/api/ytdl?apiKey=zan_bcBMA3Yv_3o4jw0eny7&url=https%3A%2F%2Fyoutube.com%2Fwatch%3Fv%3D0geqOYqwL0s&type=mp4&quality=360${encodeURIComponent(q)}&plot=full&apikey=${apiKey}`;
         const response = await axios.get(apiUrl);
         const movie = response.data;
 
