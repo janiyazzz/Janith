@@ -310,19 +310,19 @@ const sock = makeWASocket({
 
         sock.ev.on('connection.update', async (update) => {
             const { connection, lastDisconnect } = update;
-            if (connection === 'close') {
-                const statusCode = lastDisconnect?.error?.output?.statusCode;
-                const isLoggedOut = statusCode === DisconnectReason.loggedOut;
-                cleanupSession(sessionId);
-                
-                
-                if (!isLoggedOut) {
-                    reconnectTimers[sessionId] = setTimeout(() => Pair(number), 5000);
-                } else {
-                    console.log(`❌ Logged Out! Deleting session: ${sessionId}`);
-                    await Session.findOneAndDelete({ sessionId });
-                    await fs.remove(sessionPath);
-                }
+                 if (connection === 'close') {
+            const statusCode = lastDisconnect?.error?.output?.statusCode;
+            const isLoggedOut = statusCode === DisconnectReason.loggedOut;
+
+            if (!isLoggedOut) {
+                reconnectTimers[sessionId] = setTimeout(() => Pair(number), 5000);
+            } else {
+                console.log(`❌ Logged Out! Deleting session: ${sessionId}`);
+                await Session.findOneAndDelete({ sessionId });
+                await fs.remove(sessionPath);
+            }
+        }
+
             } else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
