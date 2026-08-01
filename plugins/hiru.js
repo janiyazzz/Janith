@@ -3,7 +3,7 @@ const axios = require('axios');
 
 cmd({
     pattern: "hiru",
-    alias: ["hirunews", "news"],
+    alias: ["hiru", "news"],
     desc: "Get latest Hiru News",
     category: "search",
     react: "📰",
@@ -12,17 +12,19 @@ cmd({
 async (conn, mek, m, { from, reply }) => {
     try {
         await reply("*⏳ නවතම පුවත් ලබාගනිමින් පවතී...*");
-        
-        // Public Sri Lankan News API
+
         const res = await axios.get('https://news-api-virid.vercel.app/hiru');
-        if (!res.data || !res.data.result) return reply("*❌ පුවත් සොයාගැනීමට නොහැකි විය!*");
+        
+        if (!res.data || !res.data.result) {
+            return reply("*❌ පුවත් ලබාගැනීමට නොහැකි විය!*");
+        }
 
         const news = res.data.result;
         const caption = `╭─── « *HIRU LATEST NEWS* » ───⟡
 │
-│ 📰 *${news.title || 'Hiru News'}*
+│ 📰 *${news.title}*
 │
-│ 📝 ${news.news || news.description || 'විස්තර ලබාගත නොහැක.'}
+│ 📝 ${news.news || news.description || 'විස්තර නොමැත.'}
 │
 ╰───────────────⟡
 
