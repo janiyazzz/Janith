@@ -9,10 +9,10 @@ const logoTypes = ["neon","neon2","fire2","glitch","hacker","futuristic","thunde
 
 cmd({
     pattern: "menu",
-    alias: ["panel", "list", "commands"],
+    alias: ["panel", "list", "menu"],
     desc: "Show main menu.",
     category: "main",
-    react: "🎀",
+    react: "📜",
     filename: __filename
 },
 async (conn, mek, m, { from, pushname, prefix, reply }) => {
@@ -38,12 +38,12 @@ async (conn, mek, m, { from, pushname, prefix, reply }) => {
         else if (time >= 12 && time < 17) greeting = "Good Afternoon";
         else if (time >= 17 && time < 20) greeting = "Good Evening";
 
-        const menuText = `╭─── « 𝐓ʜᴜʜɪ 𝐌ᴅ 𝐯𝟏 » ───⟡
+        const menuText = `╭─── « ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝐯𝟏 » ───⟡
 │
 │ ⊳ *𝗛𝗶 ${pushname}, ${greeting}!*
 │
 │ ◈ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 : 1.0.0
-│ ◈ 𝗢𝘄𝗻𝗲𝗿  : thuhina vimukthi wijerathna
+│ ◈ 𝗢𝘄𝗻𝗲𝗿  : Mr.JANITH SACHINTHA
 │ ◈ 𝗥𝗮𝗺    : ${ramUsage}
 │ ◈ 𝗨𝗽𝘁𝗶𝗺𝗲 : ${rtime}
 │ ◈ 𝗛𝗼𝘀𝘁   : ${hostname}
@@ -103,13 +103,13 @@ const generateSubMenu = async (conn, mek, from, category, title, pushname, reply
 
         if (cmdList === '') cmdList = `│ ⊳ No commands found.\n│\n`;
 
-        let menuContent = `╭─── « 𝐓ʜᴜʜɪ 𝐌ᴅ 𝐯𝟏» ───⟡
+        let menuContent = `╭─── « ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝐯𝟏» ───⟡
 │
 │ ⊳ *${title}*
 │
 ${cmdList}╰───────────────⟡
 
-> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1`;
+> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1`;
 
         const imgBuffer = Buffer.from(await (await fetch(botLogo)).arrayBuffer());
         await conn.sendMessage(from, { image: imgBuffer, caption: menuContent }, { quoted: mek });
@@ -122,7 +122,7 @@ ${cmdList}╰───────────────⟡
 cmd({ pattern: "logomenu", dontAddCommandList: true, filename: __filename },
 async(conn, mek, m, {from, pushname, reply}) => {
     try {
-        let logoList = `╭─── « 𝐓ʜᴜʜɪ 𝐌ᴅ 𝐯𝟏 » ───⟡
+        let logoList = `╭─── « ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝐯𝟏 » ───⟡
 │
 │ ⊳ *𝗟𝗢𝗚𝗢 𝗠𝗔𝗞𝗘𝗥 𝗠𝗘𝗡𝗨*
 │
@@ -140,7 +140,7 @@ async(conn, mek, m, {from, pushname, reply}) => {
 > _Reply with a number to generate._
 > _To set custom name: .logo <name>_
 
-> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1`;
+> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1`;
 
         const imgBuffer = Buffer.from(await (await fetch(botLogo)).arrayBuffer());
         const sentMsg = await conn.sendMessage(from, { image: imgBuffer, caption: logoList }, { quoted: mek });
