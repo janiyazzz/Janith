@@ -17,7 +17,7 @@ async(conn, mek, m, {from, prefix, q, pushname, reply}) => {
 
         const mov = await fetchJson(`https://darksadasyt-tiktokdl.vercel.app/api/tiktok?q=${q}`);
 
-        let caption = `╭━━━〔 *ᴛʜᴜʜɪ ᴍᴅ ᴠ01* 〕━━━┈⊷
+        let caption = `╭━━━〔 *ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ᴠ01* 〕━━━┈⊷
 ┃ 🎩 *ᴛɪᴋᴛᴏᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*
 ╰━━━━━━━━━━━━━━━┈⊷
 
@@ -68,7 +68,7 @@ async(conn, mek, m, {from, q, reply}) => {
         
         await conn.sendMessage(
             from, 
-            { video: { url: q }, mimetype: "video/mp4", caption: "© ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ3" }, 
+            { video: { url: q }, mimetype: "video/mp4", caption: "© ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍɪɴɪ ᴠ3" }, 
             { quoted: mek }
         );
         
@@ -92,7 +92,7 @@ async(conn, mek, m, {from, q, reply}) => {
         
         await conn.sendMessage(
             from, 
-            { video: { url: q }, mimetype: "video/mp4", caption: "© ᴅᴛᴇᴄ ᴍɪɴɪ ᴠ3" }, 
+            { video: { url: q }, mimetype: "video/mp4", caption: "© ᴊᴀɴɪʏᴀᴢᴢz ᴍɪɴɪ ᴠ3" }, 
             { quoted: mek }
         );
         
