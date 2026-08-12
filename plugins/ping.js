@@ -13,14 +13,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const startTime = Date.now();
         
         // පින්තූරය සමඟ යැවීමට අවශ්‍ය පණිවිඩය
-        const pingText = `╭━━━〔 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1 〕━━━┈⊷
+        const pingText = `╭━━━〔 ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1 〕━━━┈⊷
 ┃ 🏓 𝐏 𝐎 𝐍 𝐆 !
 ╰━━━━━━━━━━━━━━━┈⊷
 
 ⭔ 𝙎𝙥𝙚𝙚𝙙 : Pinging...
 ⭔ 𝙎𝙩𝙖𝙩𝙪𝙨 : 𝙁𝙖𝙨𝙩 & 𝘼𝙘𝙩𝙞𝙫𝙚 🟢
 
-*© 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1*`;
+*© ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1*`;
 
         // පින්තූරය සමඟ පණිවිඩය යැවීම
         const message = await conn.sendMessage(from, { 
@@ -32,14 +32,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const ping = endTime - startTime;
         
         // පින්තූරය සමඟම අගය යාවත්කාලීන කිරීම (Edit message)
-        const updatedPingText = `╭━━━〔 ᴛʜᴜʜɪ ᴍᴅ ᴠ01 〕━━━┈⊷
+        const updatedPingText = `╭━━━〔 ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ᴠ01 〕━━━┈⊷
 ┃ 🏓 𝐏 𝐎 𝐍 𝐆 !
 ╰━━━━━━━━━━━━━━━┈⊷
 
 ⭔ 𝙎𝙥𝙚𝙚𝙙 : ${ping}ms
 ⭔ 𝙎𝙩𝙖𝙩𝙪𝙨 : 𝙁𝙖𝙨𝙩 & 𝘼𝙘𝙩𝙞𝙫ᴇ 🟢
 
-*© 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅01*`;
+*© ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅01*`;
 
         await conn.sendMessage(from, { text: updatedPingText, edit: message.key });
 
