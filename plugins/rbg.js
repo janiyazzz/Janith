@@ -46,7 +46,7 @@ async (conn, mek, m, { from, reply, quoted }) => {
        
         await conn.sendMessage(from, { 
             image: rbgResponse.data, 
-            caption: "✅ *𝗥𝗘𝗠𝗢𝗩𝗘𝗕𝗚 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1" 
+            caption: "✅ *𝗥𝗘𝗠𝗢𝗩𝗘𝗕𝗚 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1" 
         }, { quoted: mek });
 
         await conn.sendMessage(from, { text: "✨ *𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱!*", edit: key });
