@@ -4,10 +4,10 @@ const FormData = require('form-data');
 
 cmd({
     pattern: "colorize",
-    alias: ["color", "🎨"],
+    alias: ["color", "cl"],
     desc: "Add color to black and white images.",
     category: "other",
-    react: "🖌️",
+    react: "🎨",
     filename: __filename
 },
 async (conn, mek, m, { from, reply, quoted }) => {
@@ -18,7 +18,7 @@ async (conn, mek, m, { from, reply, quoted }) => {
 
         if (!mime.includes('image')) return reply("📸 *𝗣𝗹𝗲𝗮𝘀𝗲 𝗿𝗲𝗽𝗹𝘆 𝘁𝗼 𝗮 𝗯𝗹𝗮𝗰𝗸 & 𝘄𝗵𝗶𝘁𝗲 𝗶𝗺𝗮𝗴𝗲!*");
 
-        const { key } = await conn.sendMessage(from, { text: "🖌️ *𝗜𝗻𝗶𝘁𝗶𝗮𝗹𝗶𝘇𝗶𝗻𝗴 𝗖𝗼𝗹𝗼𝗿𝗶𝘇𝗲...*" }, { quoted: mek });
+        const { key } = await conn.sendMessage(from, { text: "🎨 *𝗜𝗻𝗶𝘁𝗶𝗮𝗹𝗶𝘇𝗶𝗻𝗴 𝗖𝗼𝗹𝗼𝗿𝗶𝘇𝗲...*" }, { quoted: mek });
 
         
         const mediaBuffer = await q.download();
@@ -48,7 +48,7 @@ async (conn, mek, m, { from, reply, quoted }) => {
            
             await conn.sendMessage(from, {
                 image: { url: finalImage },
-                caption: "🎨 *𝗖𝗢𝗟𝗢𝗥𝗜𝗭𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © 𝙱𝙻𝙺 𝚀𝚄𝙴𝙴𝙽 𝚅𝟹"
+                caption: "🎨 *𝗖𝗢𝗟𝗢𝗥𝗜𝗭𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!*\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅𝟹"
             }, { quoted: mek });
 
             await conn.sendMessage(from, { text: "✅ *𝗙𝗶𝗻𝗶𝘀𝗵𝗲𝗱!*", edit: key });
