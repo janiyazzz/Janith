@@ -5,9 +5,9 @@ const CryptoJS = require('crypto-js');
 const router = express.Router();
 
 const baseInfo = {
-    creator: "Chama Ofc",
+    creator: "JANIYAZZZ MD",
     status: true,
-    project: "Chama Ofc"
+    project: "JANIYAZZZ MD"
 };
 
 const COMMON_HEADERS = {
