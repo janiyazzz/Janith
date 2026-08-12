@@ -21,7 +21,7 @@ async(conn, mek, m, { from, q, reply }) => {
 
         if (!result) return reply("❌ *𝗩𝗶𝗱𝗲𝗼 𝗻𝗼𝘁 𝗳𝗼𝘂𝗻𝗱!*");
 
-        let caption = `╭━━━〔 *𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 ᴠ01* 〕━━━┈⊷
+        let caption = `╭━━━〔 *ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ ᴠ01* 〕━━━┈⊷
 ┃ 📹 *𝗩𝗜𝗗𝗘𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥*
 ╰━━━━━━━━━━━━━━━┈⊷
 
@@ -105,7 +105,7 @@ async (conn, mek, m, { from, q, reply }) => {
 
         await conn.sendMessage(from, {
             video: { url: dlUrl },
-            caption: `🎬 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}p\n\n> © 𝙳𝚃𝙴𝙲 𝙼𝙸𝙽𝙸 𝚅𝟹`
+            caption: `🎬 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}p\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ 𝙼𝙸𝙽𝙸 𝚅1`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
@@ -142,7 +142,7 @@ async (conn, mek, m, { from, q, reply }) => {
             document: { url: dlUrl },
             mimetype: 'video/mp4',
             fileName: `${title || 'video'}.mp4`,
-            caption: `📂 *𝗙𝗶𝗹𝗲:* ${title}\n🎬 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}p\n\n> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅𝟹`
+            caption: `📂 *𝗙𝗶𝗹𝗲:* ${title}\n🎬 *𝗤𝘂𝗮𝗹𝗶𝘁𝘆:* ${quality}p\n\n> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅𝟹`
         }, { quoted: mek });
 
         await conn.sendMessage(from, { react: { text: '✔️', key: mek.key } });
