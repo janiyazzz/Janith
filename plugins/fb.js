@@ -3,10 +3,10 @@ const axios = require('axios');
 
 cmd({
     pattern: "fb",
-    alias: ["facebook", "fbdl"],
+    alias: ["facebook", "fb"],
     desc: "Download videos from Facebook.",
     category: "download",
-    react: "🏮",
+    react: "🔎",
     filename: __filename
 },
 async (conn, mek, m, { from, q, reply }) => {
@@ -36,14 +36,14 @@ async (conn, mek, m, { from, q, reply }) => {
        
         await conn.sendMessage(from, { react: { text: "⬆️", key: mek.key } });
         
-        const caption = `╭─── « 🏮 *𝗙𝗕 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* » ───
+        const caption = `╭─── « 🏮 *𝗝𝗔𝗡𝗜𝗬𝗔𝗭𝗭𝗭 𝗙𝗕 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* » ───
 │
 │ 🎬 *𝗧𝗶𝘁𝗹𝗲:* ${title}
 │ quality: *${quality}*
 │
 ╰───────────────⟡
 
-> © BLACK QUEEN MD V01`;
+> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ V01`;
 
         
         await conn.sendMessage(from, { 
