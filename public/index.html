@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLACK QUEEN MD V01— Pair</title>
+    <title>JANIYAZZZ MD V01— Pair</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg: #0a0f0a;
             --surface: #111811;
             --border: #1e2e1e;
-            --green: #00e676;
-            --green-dim: #00c853;
-            --green-glow: rgba(0, 230, 118, 0.15);
-            --green-glow-strong: rgba(0, 230, 118, 0.3);
+            --red: #00e676;
+            --red-dim: #00c853;
+            --red-glow: rgba(0, 230, 118, 0.15);
+            --red-glow-strong: rgba(0, 230, 118, 0.3);
             --text: #e8f5e9;
             --muted: #4a6a4a;
             --error: #ff5252;
@@ -57,7 +57,7 @@
             right: -150px;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, var(--green-glow) 0%, transparent 70%);
+            background: radial-gradient(circle, var(--red-glow) 0%, transparent 70%);
             z-index: 0;
             pointer-events: none;
         }
@@ -81,12 +81,12 @@
         .brand-icon {
             width: 44px;
             height: 44px;
-            background: var(--green);
+            background: var(--red);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px var(--green-glow-strong);
+            box-shadow: 0 0 20px var(--red-glow-strong);
             flex-shrink: 0;
         }
 
@@ -125,7 +125,7 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--green), transparent);
+            background: linear-gradient(90deg, transparent, var(--red), transparent);
             opacity: 0.6;
         }
 
@@ -146,13 +146,13 @@
             border: 1px solid var(--border);
             border-radius: 10px;
             overflow: hidden;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            transition: border-color 0.3s, box-shadow 0.2s;
             margin-bottom: 14px;
         }
 
         .input-group:focus-within {
-            border-color: var(--green);
-            box-shadow: 0 0 0 3px var(--green-glow);
+            border-color: var(--red);
+            box-shadow: 0 0 0 3px var(--red-glow);
         }
 
         .input-prefix {
@@ -192,7 +192,7 @@
         .btn {
             width: 100%;
             height: 48px;
-            background: var(--green);
+            background: var(--red);
             border: none;
             border-radius: 10px;
             color: #0a0f0a;
@@ -207,7 +207,7 @@
         }
 
         .btn:hover:not(:disabled) {
-            box-shadow: 0 0 24px var(--green-glow-strong);
+            box-shadow: 0 0 24px var(--red-glow-strong);
             transform: translateY(-1px);
         }
 
@@ -260,12 +260,12 @@
         /* Code display */
         .code-box {
             background: var(--bg);
-            border: 1px solid var(--green);
+            border: 1px solid var(--red);
             border-radius: 12px;
             padding: 20px;
             text-align: center;
             position: relative;
-            box-shadow: 0 0 32px var(--green-glow);
+            box-shadow: 0 0 32px var(--red-glow);
         }
 
         .code-label {
@@ -281,9 +281,9 @@
             font-family: 'Space Mono', monospace;
             font-size: 2.2rem;
             font-weight: 700;
-            color: var(--green);
+            color: var(--red);
             letter-spacing: 6px;
-            text-shadow: 0 0 24px var(--green-glow-strong);
+            text-shadow: 0 0 24px var(--red-glow-strong);
             word-break: break-all;
         }
 
@@ -302,13 +302,13 @@
         }
 
         .copy-btn:hover {
-            border-color: var(--green);
-            color: var(--green);
+            border-color: var(--red);
+            color: var(--red);
         }
 
         .copy-btn.copied {
-            border-color: var(--green);
-            color: var(--green);
+            border-color: var(--red);
+            color: var(--red);
         }
 
         /* Instructions */
@@ -327,7 +327,7 @@
         }
 
         .instructions p span {
-            color: var(--green);
+            color: var(--red);
             font-family: 'Space Mono', monospace;
         }
 
@@ -348,7 +348,7 @@
         .pulse-dot {
             width: 8px;
             height: 8px;
-            background: var(--green);
+            background: var(--red);
             border-radius: 50%;
             display: inline-block;
             margin-right: 6px;
@@ -381,7 +381,7 @@
             </svg>
         </div>
         <div class="brand-text">
-            <h1>BLACK QUEEN MD V1</h1>
+            <h1>JANIYAZZZ MD V1</h1>
             <p><span class="pulse-dot"></span>Pairing System</p>
         </div>
     </div>
