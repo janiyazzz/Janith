@@ -321,8 +321,7 @@ const sock = makeWASocket({
                 await Session.findOneAndDelete({ sessionId });
                 await fs.remove(sessionPath);
             }
-        }
-            } else if (connection === 'open') {
+        } else if (connection === 'open') {
                 console.log('✅ 𝐂onnected:', sessionId);
 
                 try {
