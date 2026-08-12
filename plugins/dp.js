@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 
 cmd({
     pattern: "dp",
-    alias: ["pp", "profile"],
+    alias: ["getdp", "profile"],
     react: "🖼️",
     desc: "Save WhatsApp/business whatsapp Profile Picture with Number",
     category: "owner",
@@ -42,7 +42,7 @@ async (conn, mek, m, { from, args, q, isOwner, reply, sender }) => {
         let ppUrl = await conn.profilePictureUrl(targetJid, 'image');
         let number = targetJid.split('@')[0];
 
-        let caption = `*Type:* Image\n*Dp number info:* +${number}\n\n𝗧𝗛𝗨𝗛𝗜 𝗠𝗗 𝗩𝟬𝟭\n©> ᴩᴏᴡᴇʀᴅ ʙʏ ᴛʜᴜʜɪɴᴀ ᴠɪᴍᴜᴋᴛʜɪ ᴡɪᴊᴇʀᴀᴛʜɴᴀ`;
+        let caption = `*Type:* Image\n*Dp number info:* +${number}\n\n𝗝𝗔𝗡𝗜𝗬𝗔𝗭𝗭𝗭 𝗠𝗗 𝗩𝟬𝟭\n©> ᴩᴏᴡᴇʀᴅ ʙʏ ᴊᴀɴɪᴛʜ ꜱᴀᴄʜɪɴᴛʜᴀ`;
 
         await conn.sendMessage(from, {
             image: { url: ppUrl },
