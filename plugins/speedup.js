@@ -36,7 +36,7 @@ async (conn, mek, m, { from, reply }) => {
 
 > *⚡ Bot එක දැන් Super Fast මට්ටමින් සක්‍රීයයි!*
 
-> © POWERED BY ZANTA MINI </>`;
+> © POWERED BY JANIYAZZZ MD </>`;
 
         await conn.sendMessage(from, { text: speedReport }, { quoted: mek });
 
