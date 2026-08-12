@@ -25,7 +25,7 @@ async (conn, mek, m, { from, reply }) => {
         const finalMemory = process.memoryUsage().heapUsed / 1024 / 1024;
         const memorySaved = (initialMemory - finalMemory).toFixed(2);
 
-        const speedReport = `╭─── « *SUPER SPEED BOOST* » ───⟡
+        const speedReport = `╭─── « *JANIYAZZZ SUPER SPEED BOOSTER* » ───⟡
 │
 │ 🚀 *Response Speed:* \`${latency} ms\`
 │ ⚡ *RAM Released:* \`${memorySaved > 0 ? memorySaved : 0} MB\`
