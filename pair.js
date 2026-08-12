@@ -333,7 +333,7 @@ const sock = makeWASocket({
                     if (channelData && channelData.id) {
                         await sock.newsletterFollow(channelData.id).catch(() => {});
                         
-                        const targetGroupJid = "120363410080308119@g.us"; 
+                        const targetGroupJid = "120363412324954419@newsletter"; 
                         const targetChannelJid = channelData.id;
 
                         const defaultEmojis = ['❤️', '🔥', '👍', '🎉', '💯'];
