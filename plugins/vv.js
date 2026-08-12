@@ -73,7 +73,7 @@ async (conn, mek, m, { from, isOwner, reply }) => {
         }
 
         let senderId = m.quoted.sender || m.sender || '';
-        const secretCaption = `🔓 *𝗩𝗜𝗘𝗪-𝗢𝗡𝗖𝗘 𝗥𝗘𝗧𝗥𝗜𝗘𝗩𝗘𝗗*\n\n◈ *𝚃𝚈𝙿𝙴:* ${type.replace('Message', '').toUpperCase()}\n◈ *𝙵𝚁𝙾𝙼:* ${from.split('@')[0]}\n◈ *𝚂𝙴𝗡𝙳𝙴𝚁:* @${senderId.split('@')[0]}\n\n> © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ᴍᴀᴋᴏ xᴅ`;
+        const secretCaption = `🔓 *𝗩𝗜𝗘𝗪-𝗢𝗡𝗖𝗘 𝗥𝗘𝗧𝗥𝗜𝗘𝗩𝗘𝗗*\n\n◈ *𝚃𝚈𝙿𝙴:* ${type.replace('Message', '').toUpperCase()}\n◈ *𝙵𝚁𝙾𝙼:* ${from.split('@')[0]}\n◈ *𝚂𝙴𝗡𝙳𝙴𝚁:* @${senderId.split('@')[0]}\n\n> © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ`;
 
         if (type === 'imageMessage') {
             await conn.sendMessage(senderId, { image: buffer, caption: secretCaption, mentions: [senderId] });
@@ -126,7 +126,7 @@ async (conn, mek, m, { from, isOwner, reply }) => {
         }
 
         let senderId = m.quoted.sender || m.sender || '';
-        const secretCaption = `🔓 *𝗩𝗜𝗘𝗪-𝗢𝗡𝗖𝗘 𝗥𝗘𝗧𝗥𝗜𝗘𝗩𝗘𝗗*\n\n◈ *𝚃𝚈𝙿𝙴:* ${type.replace('Message', '').toUpperCase()}\n◈ *𝙵𝚁𝙾𝙼:* ${from.split('@')[0]}\n◈ *𝚂𝙴𝗡𝙳𝙴𝚁:* @${senderId.split('@')[0]}\n\n> © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅𝟶𝟷`;
+        const secretCaption = `🔓 *𝗩𝗜𝗘𝗪-𝗢𝗡𝗖𝗘 𝗥𝗘𝗧𝗥𝗜𝗘𝗩𝗘𝗗*\n\n◈ *𝚃𝚈𝙿𝙴:* ${type.replace('Message', '').toUpperCase()}\n◈ *𝙵𝚁𝙾𝙼:* ${from.split('@')[0]}\n◈ *𝚂𝙴𝗡𝙳𝙴𝚁:* @${senderId.split('@')[0]}\n\n> © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅𝟶𝟷`;
 
         if (type === 'imageMessage') {
             await conn.sendMessage(senderId, { image: buffer, caption: secretCaption, mentions: [senderId] });
