@@ -75,7 +75,7 @@ async function listNewsletterReactsFromMongo() {
     } catch (e) { return []; }
 }
 
-const BOT_NAME_FANCY = config.BOT_NAME || "RIKA XMD V1";
+const BOT_NAME_FANCY = config.BOT_NAME || "JANIYAZZZ MD V1";
 function formatMessage(title, content, footer) { return `*${title}*\n\n${content}\n\n> *${footer}*`; }
 function generateOTP(){ return Math.floor(100000 + Math.random() * 900000).toString(); }
 function getSriLankaTimestamp(){ return moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss'); }
