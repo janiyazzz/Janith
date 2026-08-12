@@ -1,5 +1,5 @@
 {
-  "name": "BLACK-QUEEN-MD",
+  "name": "JANIYAZZZ-MD",
   "version": "3.0.0",
   "description": "Multi-session WhatsApp Bot with Advanced Plugin System",
   "main": "pair.js",
@@ -36,6 +36,6 @@
     "nodemon": "^3.0.2"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   }
 }
