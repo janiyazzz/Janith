@@ -5,7 +5,7 @@ const { downloadContentFromMessage } = require('@whiskeysockets/baileys');
 
 cmd({
     pattern: "tourl",
-    alias: ["img2url", "upload", "imgurl"],
+    alias: ["img2url", "upload", "tourl"],
     desc: "Upload image to ImgBB and get a direct URL.",
     category: "other",
     react: "🔗",
@@ -55,7 +55,7 @@ async (conn, mek, m, { from, reply, pushname }) => {
 │
 ╰───────────────⟡
 
-> © 𝙱𝙻𝙰𝙲𝙺 𝚀𝚄𝙴𝙴𝙽 𝙼𝙳 𝚅1`;
+> © ᴊᴀɴɪʏᴀᴢᴢᴢ ᴍᴅ 𝚅1`;
 
         await reply(caption);
         await conn.sendMessage(from, { react: { text: "✅", key: mek.key } });
